@@ -1,44 +1,69 @@
+/* Body and Container Style */
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: rgb(0, 0, 33);
-    color: white;
+    width: 100%;
+    background-color:rgb(146,146,255);
+    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#viewBox {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    background-color: #E8F9FF;
+}
+
+
+/* Navigation Bar Style */
 nav{
     display: flex;
     justify-content:space-around;
     align-items: center;
     height: 90px;
-    background-color:rgb(5,5,50) ;
+    background-color:#fbfbfb;  
+    box-shadow: 0px 10px 200px rgb(103, 103, 103);
 }
 
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    
+    list-style: none;   
 }
 nav ul li{
     margin: 3px 16px;
     font-size: 1.1rem;
 }
 
+
+#right1 a{
+    text-decoration: none;
+    color: rgb(98, 0, 225);
+}
+
+#right1 a:hover{
+    font-weight: 600;
+}
+
 .left{
     font-size: 1.8rem;
-    transition: font-size 2s;
+    transition: font-size .5s;
 }
 .left:hover{
     font-size: 2rem;
 }
 
 
-/* main */
+/* The Main Intro section */
 /* First Section */
 .first div{
     width: 35%;
@@ -49,6 +74,7 @@ nav ul li{
     align-items: center;
     padding:5px;
     margin:10px 0px; 
+    
 }
 
 
@@ -57,13 +83,20 @@ nav ul li{
 .leftSection{
   
     font-size: 2.4rem;
+    align-items: center;
+    text-align: center;
   
 }
 
 
 .rightSection img{
-    width:650px;
-    height:450px;
+    object-fit: cover;
+    width:80%;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px  grey;
+   
    
 }
 
@@ -73,30 +106,35 @@ nav ul li{
     width:80%;
     height:80%;
     border: 2px solid white;
+    background-color: #C4D9FF;
     margin: auto;
     border-radius: 7px;
     margin-bottom: 4px;
 }
 
+#c1 {
+    border-bottom: 2px solid rgb(180, 176, 185);
+}
+
 #c1 ul li{
-    list-style: none;
-    
+    margin-top: 8px;
+    margin-bottom: 8px;
+    list-style: none;   
 }
 #c1 ul button{
     font-size: 22px;
     margin: 5px 5px;
-    color: white;
-    background-color: rgb(5,5,50);
-    border: 1px solid rgb(138, 151, 253);
-    border-radius: 5px;
-    padding:15px 10px;
+    color: rgb(0, 0, 0);
+    background-color: #a998fd;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding:10px 20px;
 }
 #c1 ul button:hover{
-    background-color: rgb(3, 3, 31);
-    border-radius: 10px;
+    background-color: #6244f9;
 }
 #c1 ul button:active{
-    background-color: white;
+    background-color:  #ae9efe;
 }
 #c1 ul{
     display:flex;
@@ -108,8 +146,7 @@ nav ul li{
 
 .content {
    padding: 20px;
-   margin: 10px;
-   
+   margin: 10px; 
    text-align: left;
    font-size: 20px;
 }
@@ -120,7 +157,6 @@ nav ul li{
 }
 #about{
     word-spacing: 10px;
-    color: rgb(221, 221, 221);
     line-height: 35px;
 
 }
@@ -158,9 +194,11 @@ nav ul li{
 
 
 
+/* Footer of the site. */
 
 footer {
-   padding: 10px;
-   margin: 15px 5px;
+    border-top: 2px solid rgb(66, 65, 65);
+    padding: 13px 0px;
+    margin-top: 1px;
     text-align: center;
 }
