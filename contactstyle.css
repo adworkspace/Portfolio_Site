@@ -1,0 +1,62 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins","san-serif";
+    
+    
+}
+
+#container2{
+    background-color: blueviolet;
+}
+
+#contactCard{
+    margin: 0% 30%;
+    padding: 2%;
+    height: 50% ;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    /* border: 2px solid rgb(180, 0, 245); */
+    box-shadow: .2rem .2rem .8rem .2rem rgb(184, 183, 183);
+}
+
+#ccheader{
+    text-align: center;
+    padding: .1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+}
+
+#imgDiv{
+    display: inline;
+    float: left;
+    padding-top: 22px;
+}
+
+#headDiv h2{
+    display: inline-block;
+}
+
+#ccbody{
+    padding: 4% 10%;
+    align-items: center;
+    align-content: center;
+}
+
+#ccbody ul {
+    list-style: none;
+    line-height: 1.8rem;
+}
+
+#ccbody ul li{
+    padding: .2rem;
+} 
+
+@media only screen and (max-width: 772px) {
+    #contactCard{
+        overflow: hidden;
+        margin: 3% 5%;
+        
+    }
+}
